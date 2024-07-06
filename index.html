@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="details">
+                <h1>Project Management</h1>
+                <p>keet it up</p>
+                <div id="progress-main">
+                <div class="progressbar" id="progress_bar">
+                    <div id="progress"></div>
+                </div>
+                <p id="progress-text">0% Completed</p></div>
+            </div>
+
+            <form action="">
+                <input type="text" id="task-name" placeholder="Task Name" required />
+                <input type="text" id="task-assignee" placeholder="Assignee" required />
+                <div class="two">
+                    <input type="date" id="task-deadline" required /> 
+                    <button id="btn" type="button"
+                        onclick="addTask()">+</button>
+                </div>
+
+            </form>
+        <hr id="hr">
+        <div id="tasks">
+            <h2>Tasks</h2>
+            <ul id="task-list"></ul>
+        </div>
+    </div>
+    </div>
+    <script src="sc.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+</body>
+
+</html>
